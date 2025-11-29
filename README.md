@@ -19,7 +19,7 @@ Docker container for Jekyll static site generator with full GitHub Pages support
 docker run -d \
   -p 4000:4000 \
   -v $(pwd):/srv/jekyll \
-  casjaysdevdocker/jekyll
+  casjaysdev/jekyll
 ```
 
 ### Create New Site
@@ -27,7 +27,7 @@ docker run -d \
 ```bash
 docker run --rm \
   -v $(pwd):/srv/jekyll \
-  casjaysdevdocker/jekyll \
+  casjaysdev/jekyll \
   jekyll new my-site
 ```
 
@@ -36,7 +36,7 @@ docker run --rm \
 ```bash
 docker run --rm \
   -v $(pwd):/srv/jekyll \
-  casjaysdevdocker/jekyll \
+  casjaysdev/jekyll \
   jekyll build
 ```
 
@@ -46,7 +46,7 @@ docker run --rm \
 docker run -d \
   -p 4000:4000 \
   -v $(pwd):/srv/jekyll \
-  casjaysdevdocker/jekyll \
+  casjaysdev/jekyll \
   jekyll serve --host 0.0.0.0 --livereload
 ```
 
